@@ -5,7 +5,7 @@ import random
 
 np = input("whitch data you want(claps,reading_time): ")
 
-df = pd.read_csv('pro 110/medium_data.csv')
+df = pd.read_csv('medium_data.csv')
 data = df[np].tolist()
 
 def get_mean(counter):
