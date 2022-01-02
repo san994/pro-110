@@ -8,6 +8,8 @@ np = input("whitch data you want(claps,reading_time): ")
 df = pd.read_csv('medium_data.csv')
 data = df[np].tolist()
 
+print("mean of population data is {}".format(statistics.mean(data))
+
 def get_mean(counter):
     data_set=[]
 
@@ -32,7 +34,7 @@ def main():
     for i in range(0,100):
         set_of_mean = get_mean(30)
         mean_list.append(set_of_mean)
-
+    print('mean of sample data is {}'.format(statistics.mean(mean_list))
     show_fig(mean_list)
 
 main()
